@@ -5,17 +5,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emergency Hotline</title>
-  
+
   <!-- daisyUi and tailwindcss -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
   <!-- styles -->
-   <link rel="stylesheet" href="styles/tailwind.css">
+  <link rel="stylesheet" href="styles/tailwind.css">
 </head>
 
-<body>
-
+<body class=".hind-madurai">
+  <!-- navbar section -->
+  <nav class="flex justify-between items-center mx-[60px] my-6">
+    <div class="flex items-center gap-2">
+      <div class="w-[50px] h-[50px]">
+        <img src="./assets/logo.png" alt="">
+      </div>
+      <p class="text-[#006747] font-extrabold">Emergency<br>Service</p>
+    </div>
+    <div class="flex gap-5">
+      <button class="btn bg-[#41ff6b1a] text-[#000000] rounded-[50px]">
+        <span>0</span>
+        <img src="./assets/heart.png" alt="like" class="w-6 h-6">
+      </button>
+      <button class="btn bg-[#41ff6b1a] text-[#000000] rounded-[50px]">
+        <span>0</span>
+        <img src="./assets/coin.png" alt="" class="w-6 h-6">
+      </button>
+      <button class="btn bg-[#00a63e] text-white rounded-[50px]"><span>0</span>Copy</button>
+    </div>
+  </nav>
 </body>
 
 </html>
