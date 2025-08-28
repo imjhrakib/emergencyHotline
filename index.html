@@ -31,11 +31,11 @@
     </div>
     <div class="flex gap-1 md:gap-5">
       <button class="btn bg-[#41ff6b1a] text-[#000000] rounded-[50px]">
-        <span>0</span>
+        <span id="remainingHeart">0</span>
         <img src="./assets/heart.png" alt="like" class="w-6 h-6">
       </button>
       <button class="btn bg-[#41ff6b1a] text-[#000000] rounded-[50px]">
-        <span>0</span>
+        <span id="remainingCoin">0</span>
         <img src="./assets/coin.png" alt="" class="w-6 h-6">
       </button>
       <button class="btn bg-[#00a63e] text-white rounded-[50px]"><span>0</span>Copy</button>
@@ -49,7 +49,8 @@
         <img src="./assets/logo-dark.png" alt="">
       </div>
       <p class="text-white font-bold text-2xl md:text-[35px]">Emergency Service Directory</p>
-      <p class="text-white font-semibold text-[14px] md:text-[18px]">Government Emergency Services at Your Fingertip – A Project by
+      <p class="text-white font-semibold text-[14px] md:text-[18px]">Government Emergency Services at Your Fingertip – A
+        Project by
         Government of the People’s Republic of Bangladesh</p>
     </div>
   </section>
@@ -62,7 +63,7 @@
           <div class="bg-white flex justify-between items-center">
             <div class="bg-[#FFE3E2] rounded-2xl p-4 w-14 h-14 flex items-center"><img src="./assets/emergency.png"
                 alt="" class="w-8 h-8"></div>
-            <i class="fa-regular fa-heart text-xl"></i>
+            <i class="fa-regular fa-heart text-xl heart-icon"></i>
           </div>
           <div class="mt-2.5">
             <p class="text-xl whitespace-nowrap font-bold">National Emergency Number</p>
@@ -79,11 +80,13 @@
             <button class="btn w-1/2 rounded-lg bg-[#00A63E] text-white"><i class="fa-solid fa-phone"></i>Call</button>
           </div>
         </div>
+
+
         <div class="p-5 bg-white rounded-xl">
           <div class="bg-white flex justify-between items-center">
             <div class="bg-[#DFEFFF] rounded-2xl p-4 w-14 h-14 flex items-center"><img src="./assets/police.png" alt=""
                 class="w-8 h-8"></div>
-            <i class="fa-regular fa-heart text-xl"></i>
+            <i class="fa-regular fa-heart text-xl heart-icon"></i>
           </div>
           <div class="mt-2.5">
             <p class="text-xl whitespace-nowrap font-bold">Police Helpline Number</p>
@@ -104,7 +107,7 @@
           <div class="bg-white flex justify-between items-center">
             <div class="bg-[#FFE3E2] rounded-2xl p-4 w-14 h-14 flex items-center"><img src="./assets/fire-service.png"
                 alt="" class="w-8 h-8"></div>
-            <i class="fa-regular fa-heart text-xl"></i>
+            <i class="fa-regular fa-heart text-xl heart-icon"></i>
           </div>
           <div class="mt-2.5">
             <p class="text-xl whitespace-nowrap font-bold">Fire Service Number</p>
@@ -121,11 +124,13 @@
             <button class="btn w-1/2 rounded-lg bg-[#00A63E] text-white"><i class="fa-solid fa-phone"></i>Call</button>
           </div>
         </div>
+
+
         <div class="p-5 bg-white rounded-xl">
           <div class="bg-white flex justify-between items-center">
             <div class="bg-[#FFE3E2] rounded-2xl p-4 w-14 h-14 flex items-center"><img src="./assets/ambulance.png"
                 alt="" class="w-8 h-8"></div>
-            <i class="fa-regular fa-heart text-xl"></i>
+            <i class="fa-regular fa-heart text-xl heart-icon"></i>
           </div>
           <div class="mt-2.5">
             <p class="text-xl whitespace-nowrap font-bold">Ambulance Service</p>
@@ -147,7 +152,7 @@
           <div class="bg-white flex justify-between items-center">
             <div class="bg-[#FFE3E2] rounded-2xl p-4 w-14 h-14 flex items-center"><img src="./assets/emergency.png"
                 alt="" class="w-8 h-8"></div>
-            <i class="fa-regular fa-heart text-xl"></i>
+            <i class="fa-regular fa-heart text-xl heart-icon"></i>
           </div>
           <div class="mt-2.5">
             <p class="text-xl whitespace-nowrap font-bold">Women & Child Helpline</p>
@@ -170,7 +175,7 @@
           <div class="bg-white flex justify-between items-center">
             <div class="bg-[#FFE3E2] rounded-2xl p-4 w-14 h-14 flex items-center"><img src="./assets/emergency.png"
                 alt="" class="w-8 h-8"></div>
-            <i class="fa-regular fa-heart text-xl"></i>
+            <i class="fa-regular fa-heart text-xl heart-icon"></i>
           </div>
           <div class="mt-2.5">
             <p class="text-xl whitespace-nowrap font-bold">Anti-Corruption Helpline</p>
@@ -193,7 +198,7 @@
           <div class="bg-white flex justify-between items-center">
             <div class="bg-[#FFE3E2] rounded-2xl p-4 w-14 h-14 flex items-center"><img src="./assets/emergency.png"
                 alt="" class="w-8 h-8"></div>
-            <i class="fa-regular fa-heart text-xl"></i>
+            <i class="fa-regular fa-heart text-xl heart-icon"></i>
           </div>
           <div class="mt-2.5">
             <p class="text-xl whitespace-nowrap font-bold">Electricity Helpline</p>
@@ -215,7 +220,7 @@
           <div class="bg-white flex justify-between items-center">
             <div class="bg-[#FFE3E2] rounded-2xl p-4 w-14 h-14 flex items-center"><img src="./assets/brac.png" alt=""
                 class="w-8 h-8"></div>
-            <i class="fa-regular fa-heart text-xl"></i>
+            <i class="fa-regular fa-heart text-xl heart-icon"></i>
           </div>
           <div class="mt-2.5">
             <p class="text-xl whitespace-nowrap font-bold">Brac Helpline</p>
@@ -238,7 +243,7 @@
           <div class="bg-white flex justify-between items-center">
             <div class="bg-[#FFE3E2] rounded-2xl p-4 w-14 h-14 flex items-center"><img
                 src="./assets/Bangladesh-Railway.png" alt="" class="w-8 h-8"></div>
-            <i class="fa-regular fa-heart text-xl"></i>
+            <i class="fa-regular fa-heart text-xl heart-icon"></i>
           </div>
           <div class="mt-2.5">
             <p class="text-xl whitespace-nowrap font-bold">Bangladesh Railway Helpline</p>
@@ -281,6 +286,9 @@
     </div>
   </section>
 
+
+  <!-- js script -->
+  <script src="script.js"></script>
 </body>
 
 </html>
