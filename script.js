@@ -56,3 +56,20 @@ for (let i = 0; i < callBtns.length; i++) {
 document.getElementById("clearHistoryBtn").addEventListener("click",function(){
   document.getElementById("callHistoryContainer").innerHTML = ""
 })
+
+// copy button functionalities
+
+const copyBtns = document.getElementsByClassName("copyBtn")
+
+for(let i=0; i<copyBtns.length; i++){
+  copyBtns[i].addEventListener("click",function(){
+  let copyCount = parseInt(document.getElementById("copyCount").innerText)
+  
+  document.getElementById("copyCount").innerText = ++copyCount
+  
+  let number = document.getElementsByClassName("serviceNumber")[i].innerText
+  navigator.clipboard.writeText(number).then(()=>{
+    
+  })
+})
+}
